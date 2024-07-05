@@ -40,7 +40,7 @@ body {
     border: 0;
     font-size: 16px;
     user-select: none;
-    -webkit-user-select: none;
+    -webkit-user-select: initial;
     touch-action: manipulation;
   }
 
@@ -82,12 +82,16 @@ body {
 
   .red-section-box {
     border: 5px solid red;
+    border-top-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 5%;
   }
 
   .blue-section-box {
     border: 5px solid blue;
+    border-top-style: none;
+    border-radius: 5%;
     margin-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -95,6 +99,8 @@ body {
 
   .green-section-box {
     border: 5px solid green;
+    border-top-style: none;
+    border-radius: 5%;
     margin-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
