@@ -41,6 +41,11 @@ function removeBalls() {
     return;
   }
 
+  if (totalBalls.red + totalBalls.blue + totalBalls.green < x) {
+    alert(`you don't have ${x} amount of balls to remove`);
+    return;
+  }
+
   let remaining = x;
   const sections = ["red", "blue", "green"];
   const removedBalls = { red: 0, blue: 0, green: 0 };
