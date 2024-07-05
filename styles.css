@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+.button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.underline {
+    position: relative;
+  }
+  
+  .underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-top: solid 3px red;
+    left: 0;
+    bottom: -10px;
+    border-radius: 50%;
+    height: 8px;
+  }
+
+.bucket-section-box{
+    border: 5px solid purple;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.red-section-box {
+    border: 5px solid red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blue-section-box {
+    border: 5px solid blue;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.green-section-box {
+    border: 5px solid green;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sections, .bucket {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.section, .bucket {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.balls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.ball.red {
+    background-color: red;
+}
+
+.ball.blue {
+    background-color: blue;
+}
+
+.ball.green {
+    background-color: green;
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+@keyframes removeBall {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes addBall {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.removing {
+    animation: removeBall 0.5s forwards;
+}
+
+.adding {
+    animation: addBall 0.5s forwards;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ball Removal Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-color: #d3d3d3">
+    <h1 class="underline">Ball Removal Game</h1>
+    <div class="sections">
+      <div class="red-section-box">
+        <div class="section" id="section-red">
+          <h2>Red Section</h2>
+          <div class="balls" id="balls-red"></div>
+        </div>
+      </div>
+      <div class="blue-section-box">
+        <div class="section" id="section-blue">
+          <h2>Blue Section</h2>
+          <div class="balls" id="balls-blue"></div>
+        </div>
+      </div>
+
+      <div class="green-section-box">
+        <div class="section" id="section-green">
+          <h2>Green Section</h2>
+          <div class="balls" id="balls-green"></div>
+        </div>
+      </div>
+    </div>
+    <div class="input-container">
+      <label for="ball-count" style="font-weight: bold">
+        Enter a number (1-15):
+      </label>
+      <input type="number" id="ball-count" min="1" max="15" />
+      <button onclick="removeBalls()" class="button">Remove Balls</button>
+    </div>
+
+    <div class="bucket-section-box">
+      <div class="bucket">
+        <h2 class="bucket">Bucket</h2>
+        <div class="balls" id="bucket-balls"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
