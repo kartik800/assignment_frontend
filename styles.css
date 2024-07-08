@@ -1,154 +1,218 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
-  input[type="number"] {
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s;
-  }
+input[type="number"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
 
-  input[type="number"]:focus {
-    border-color: #007bff;
-  }
+input[type="number"]:focus {
+  border-color: #007bff;
+}
 
-  .button {
-    background-color: #c2fbd7;
-    border-radius: 100px;
-    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,
-                rgba(44, 187, 99, .15) 0 1px 2px,
-                rgba(44, 187, 99, .15) 0 2px 4px,
-                rgba(44, 187, 99, .15) 0 4px 8px,
-                rgba(44, 187, 99, .15) 0 8px 16px,
-                rgba(44, 187, 99, .15) 0 16px 32px;
-    color: green;
-    cursor: pointer;
-    display: inline-block;
-    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-    padding: 7px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 16px;
-    user-select: none;
-    -webkit-user-select: initial;
-    touch-action: manipulation;
-  }
+.button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: initial;
+  touch-action: manipulation;
+}
 
-  .button:hover {
-    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset,
-                rgba(44, 187, 99, .25) 0 1px 2px,
-                rgba(44, 187, 99, .25) 0 2px 4px,
-                rgba(44, 187, 99, .25) 0 4px 8px,
-                rgba(44, 187, 99, .25) 0 8px 16px,
-                rgba(44, 187, 99, .25) 0 16px 32px;
-    transform: scale(1.05) rotate(-1deg);
-  }
+.button:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
 
-  .underline {
-    position: relative;
-  }
+.underline {
+  position: relative;
+}
 
-  .underline:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    border-top: solid 3px red;
-    left: 0;
-    bottom: -10px;
-    border-radius: 50%;
-    height: 8px;
-  }
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: solid 3px red;
+  left: 0;
+  bottom: -10px;
+  border-radius: 50%;
+  height: 8px;
+}
 
+.bucket-section-box {
+  height: 50vh;
+  width: 60vw;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  border: solid 16px purple;
+  border-top-style: none;
+  border-radius: 5%;
+}
+
+.red-section-box {
+  border: 5px solid red;
+  border-top-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5%;
+}
+
+.blue-section-box {
+  border: 5px solid blue;
+  border-top-style: none;
+  border-radius: 5%;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.green-section-box {
+  border: 5px solid green;
+  border-top-style: none;
+  border-radius: 5%;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sections,
+.bucket {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.section,
+.bucket {
+  text-align: center;
+}
+
+.balls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ball {
+  width: 3vw;
+  height: 5vh;
+  border-radius: 50%;
+}
+
+.ball.red {
+  background-color: red;
+}
+
+.ball.blue {
+  background-color: blue;
+}
+
+.ball.green {
+  background-color: green;
+}
+
+.input-container {
+  margin: 20px 0;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+@keyframes addBall {
+  to {
+    transform: translate(5vw, 72vh);
+  }
+}
+
+.adding {
+  animation: addBall 5s 1;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 1050px) {
   .bucket-section-box {
-    height: 50vh;
-    width: 60vw;
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    border: solid 16px purple;
-    border-top-style: none;
-    border-radius: 5%;
-  }
-
-  .red-section-box {
-    border: 5px solid red;
-    border-top-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5%;
-  }
-
-  .blue-section-box {
-    border: 5px solid blue;
-    border-top-style: none;
-    border-radius: 5%;
-    margin-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .green-section-box {
-    border: 5px solid green;
-    border-top-style: none;
-    border-radius: 5%;
-    margin-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .sections, .bucket {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-
-  .section, .bucket {
-    margin: 0 10px;
-    text-align: center;
-  }
-
-  .balls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    width: 80vw;
+    left: 10%;
+    height: 30vh;
   }
 
   .ball {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 3vw;
+    height: 3vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .bucket-section-box {
+    width: 80vw;
+    left: 10%;
+    height: 30vh;
   }
 
-  .ball.red {
-    background-color: red;
+  .ball {
+    width: 1.5vw;
+    height: 1.5vh;
+  }
+}
+
+@media (max-height: 850px) {
+  .bucket-section-box {
+    width: 80vw;
+    left: 10%;
+    height: 30vh;
   }
 
-  .ball.blue {
-    background-color: blue;
+  @keyframes addBall {
+    to {
+      transform: translate(5vw, 65vh);
+    }
   }
 
-  .ball.green {
-    background-color: green;
+  .adding {
+    animation: addBall 5s 1;
+    animation-fill-mode: forwards;
   }
-
-  .input-container {
-    margin: 20px 0;
+  .ball {
+    width: 2vw;
+    height: 3vh;
   }
+}
 
-  button {
-    margin-left: 10px;
-    padding: 5px 10px;
+@media (max-height: 750px) {
+  .bucket-section-box {
+    width: 80vw;
+    left: 10%;
+    height: 30vh;
   }
 
   @keyframes addBall {
@@ -162,44 +226,104 @@ body {
     animation-fill-mode: forwards;
   }
 
-  @media (max-width: 768px) {
-    .bucket-section-box {
-      width: 80vw;
-      left: 10%;
-    }
+  .ball {
+    width: 2vw;
+    height: 3vh;
+  }
+}
 
-    .ball {
-      width: 20px;
-      height: 20px;
-    }
+@media (max-height: 700px) {
+  .bucket-section-box {
+    width: 80vw;
+    left: 10%;
+    height: 30vh;
+  }
 
-    input[type="number"] {
-      width: 100px;
-    }
-
-    button {
-      padding: 5px;
-      font-size: 14px;
+  @keyframes addBall {
+    to {
+      transform: translate(5vw, 60vh);
     }
   }
 
-  @media (max-width: 480px) {
-    .bucket-section-box {
-      width: 90vw;
-      left: 5%;
-    }
+  .adding {
+    animation: addBall 5s 1;
+    animation-fill-mode: forwards;
+  }
 
-    .ball {
-      width: 15px;
-      height: 15px;
-    }
+  .ball {
+    width: 2vw;
+    height: 3vh;
+  }
+}
 
-    input[type="number"] {
-      width: 80px;
-    }
+@media (max-height: 650px) {
+  .bucket-section-box {
+    width: 80vw;
+    left: 10%;
+    height: 30vh;
+  }
 
-    button {
-      padding: 3px;
-      font-size: 12px;
+  @keyframes addBall {
+    to {
+      transform: translate(5vw, 55vh);
     }
   }
+
+  .adding {
+    animation: addBall 5s 1;
+    animation-fill-mode: forwards;
+  }
+
+  .ball {
+    width: 2vw;
+    height: 3vh;
+  }
+}
+
+@media (max-height: 600px) {
+  .bucket-section-box {
+    width: 80vw;
+    left: 10%;
+    height: 30vh;
+  }
+
+  @keyframes addBall {
+    to {
+      transform: translate(5vw, 53vh);
+    }
+  }
+
+  .adding {
+    animation: addBall 5s 1;
+    animation-fill-mode: forwards;
+  }
+
+  .ball {
+    width: 2vw;
+    height: 3vh;
+  }
+}
+
+@media (max-height: 500px) {
+  .bucket-section-box {
+    width: 80vw;
+    left: 10%;
+    height: 30vh;
+  }
+
+  @keyframes addBall {
+    to {
+      transform: translate(5vw, 45vh);
+    }
+  }
+
+  .adding {
+    animation: addBall 5s 1;
+    animation-fill-mode: forwards;
+  }
+
+  .ball {
+    width: 2vw;
+    height: 3vh;
+  }
+}
